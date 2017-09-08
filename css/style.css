@@ -1,0 +1,70 @@
+.header-logo {
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.divider {
+    height:50px;
+}
+
+section {
+    height:500px;
+    padding-top:50px;
+    padding-bottom:50px;
+    overflow:auto;
+}
+
+.bg-1 {
+	background: url('/Users/hvx384/Documents/1.BJ/qw_dot_com/assets/images/main.jpg');
+    background-size:cover;
+}
+  
+.bg-2 {
+	background: url('/Users/hvx384/Documents/1.BJ/qw_dot_com/assets/images/main2.jpg') no-repeat top center fixed;
+    background-size:cover;
+}
+
+.bg-3 {
+	background: url('/Users/hvx384/Documents/1.BJ/qw_dot_com/assets/images/contact.jpg') no-repeat bottom center fixed;
+    background-size:cover;
+}
+
+#footer {
+    background-color:#795548;
+    margin-top:50px;
+    padding-top:10px;
+    /*padding-bottom:10px;*/
+    /*margin-bottom:50px;*/
+}
+
+.center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-brown {
+    color: #795548 !important;
+}
+
+.vertical-align {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.contact-col {
+    padding-top:30px;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+#qw-navbar {
+    padding-right:15px;
+}

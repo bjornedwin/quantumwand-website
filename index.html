@@ -1,0 +1,252 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Quantum Wand</title>
+
+        <meta name="description" content="Quantum Wand">
+        <meta name="author" content="bjorn.edwin@capitalone.com">
+        <link rel="icon" type="image/png" href="assets/images/qw-icon.png"/>
+
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
+
+        <script>
+            $(document).ready(function(){
+                $(".dropdown-toggle").dropdown();
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 90
+                    }, 1000, function(){
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                    } // End if
+                });
+            });
+        </script>
+
+    </head>
+
+    <body data-spy="scroll" data-target="#section-qw-navbar" data-offset="120">
+        <div class="container-fluid">
+            <div class="row" id="section-qw-navbar">
+                    <!-- BEGIN: Navigation bar -->
+                    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="qw-navbar">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                                </button> 
+                                <a class="navbar-brand header-logo" href="#"><img height="60px" src="assets/images/qw-logo.png"></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="#section-home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#section-services">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#section-approach">Approach</a>
+                                    </li>
+                                    <li>
+                                        <a href="#section-connect">Connect</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- END: Navigation bar -->
+                    <!-- BEGIN: First Parallax background -->
+                    <section class="bg-1 text-center text-white" style="margin-top: 60px;" id="section-home">
+                        <div class="vertical-align">
+                            <h1>Let us transform</h1>
+                            <h3>Your software delivery and much more..</h3>
+                        </div>
+                    </section>
+                    <!-- END: First Parallax background -->
+                    <div class="divider"></div>
+                    <!-- BEGIN: Services Section -->
+                    <div class="container" id="section-services">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h2 class="center text-brown">
+                                    <i class="fa fa-cogs fa-fw" aria-hidden="true"></i>
+                                </h2>
+                                <h4 class="center text-brown">Automation</h4>
+
+                                <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
+                                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
+                                    condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
+                                    nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+                                    accumsan. Aliquam in felis sit amet augue
+                                </p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h2 class="center text-brown">
+                                    <i class="fa fa-refresh fa-fw" aria-hidden="true"></i>
+                                </h2>
+                                <h4 class="center text-brown">Continuous Delivery</h4>
+
+                                <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
+                                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
+                                    condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
+                                    nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+                                    accumsan. Aliquam in felis sit amet augue
+                                </p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h2 class="center text-brown">
+                                    <i class="fa fa-handshake-o fa-fw" aria-hidden="true"></i>
+                                </h2>
+                                <h4 class="center text-brown">DevOps</h4>
+
+                                <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
+                                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
+                                    condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
+                                    nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+                                    accumsan. Aliquam in felis sit amet augue
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- END: Services Section -->
+                    <div class="divider"></div>
+                    <!-- BEGIN: Second Parallax background -->
+                    <section class="bg-2 text-center text-white ">
+                        <div class="vertical-align">
+                            <h3>Transformation begins with people, followed by tools and frameworks which is the easy part</h3>
+                            <h3>We do both!</h3>
+                        </div>
+                    </section>
+                    <!-- BEGIN: Second Parallax background -->
+                    <div class="divider"></div>
+                    <!-- BEGIN: Approach Section -->
+                    <div class="container" id="section-approach">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h2 class="center text-brown">
+                                    <i class="fa fa-search fa-fw" aria-hidden="true"></i>
+                                </h2>
+                                <h4 class="center text-brown">Discover</h4>
+
+                                <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
+                                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
+                                    condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
+                                    nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+                                    accumsan. Aliquam in felis sit amet augue
+                                </p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h2 class="center text-brown">
+                                    <i class="fa fa-group fa-fw" aria-hidden="true"></i>
+                                </h2>
+                                <h4 class="center text-brown">Immerse</h4>
+
+                                <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
+                                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
+                                    condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
+                                    nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+                                    accumsan. Aliquam in felis sit amet augue
+                                </p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h2 class="center text-brown">
+                                    <i class="fa fa-sliders fa-fw" aria-hidden="true"></i>
+                                </h2>
+                                <h4 class="center text-brown">Measure & Adapt</h4>
+
+                                <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
+                                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
+                                    condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
+                                    nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+                                    accumsan. Aliquam in felis sit amet augue
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- END: Approach Section -->
+                    <div class="divider"></div>
+                    <!-- Third Parallax background -->
+                    <section class="bg-3 text-center text-white "></section>
+                    <!-- BEGIN: Contact Section -->
+                    <div class="container" id="section-connect">
+                        <div class="row">
+                            <h2 class="center text-brown">
+                                    <i class="fa fa-telegram fa-fw" aria-hidden="true"></i>
+                                </h2>
+                                <h4 class="center text-brown">Let's get started</h4>
+                            <form class="form-horizontal">
+                                <div class="col-md-6 contact-col">
+                                    <div class="form-group">
+                                        <label class="control-label" for="contact_name">Your Name</label>
+                                        <input class="form-control" id="contact_name" type="text" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="contact_email">Email</label>
+                                        <input class="form-control" id="contact_email" type="text" value="">
+                                    </div>
+                                </div>
+                                    <div class="col-md-6 contact-col">
+                                    <div class="form-group">
+                                        <label class="control-label" for="contact_company">Company Name</label>
+                                        <input class="form-control" id="contact_company" type="text" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="contact_phone">Phone</label>
+                                        <input class="form-control" id="contact_phone" type="text" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="control-label" for="contact_email">Message</label>
+                                    <textarea class="form-control" id="contact_email" type="text" rows=3></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- END: Contact Section -->
+                    <div class="divider"></div>
+                    <!-- BEGIN: Footer Section -->
+                    <div class="row" id="footer">
+                        <div class="container text-center text-white">
+                            <h5>Connect</h5>
+                            <h3>
+                                <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+                                <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+                                <i class="fa fa-google-plus fa-fw" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
+                                <i class="fa fa-github fa-fw" aria-hidden="true"></i>
+                            </h3>
+                            <p style="padding-top:10px;"><i class="fa fa-copyright fa-fw" aria-hidden="true"></i> Quantum Wand, 2017</p>
+                        </div> 
+                    </div>
+                    <!-- END: Footer Section -->
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
