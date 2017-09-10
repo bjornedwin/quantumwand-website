@@ -17,17 +17,17 @@ section {
 }
 
 .bg-1 {
-	background: url('/Users/hvx384/Documents/1.BJ/qw_dot_com/assets/images/main.jpg');
+	background: url('../assets/images/main.jpg');
     background-size:cover;
 }
   
 .bg-2 {
-	background: url('/Users/hvx384/Documents/1.BJ/qw_dot_com/assets/images/main2.jpg') no-repeat top center fixed;
+	background: url('../assets/images/main2.jpg') no-repeat top center fixed;
     background-size:cover;
 }
 
 .bg-3 {
-	background: url('/Users/hvx384/Documents/1.BJ/qw_dot_com/assets/images/contact.jpg') no-repeat bottom center fixed;
+	background: url('../assets/images/contact.jpg') no-repeat bottom center fixed;
     background-size:cover;
 }
 
