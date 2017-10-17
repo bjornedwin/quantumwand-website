@@ -31,12 +31,23 @@ section {
     background-size:cover;
 }
 
-#footer {
+.footer {
     background-color:#795548;
     margin-top:50px;
     padding-top:10px;
     /*padding-bottom:10px;*/
     /*margin-bottom:50px;*/
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: #eae2db;
+ }
+.footer a:focus{ 
+    color: #eae2db;
 }
 
 .center {
@@ -67,4 +78,12 @@ section {
 
 #qw-navbar {
     padding-right:15px;
+}
+
+form .error{
+    color: #ff9800;
+}
+
+.hideme {
+    display: none;
 }

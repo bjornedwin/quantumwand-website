@@ -12,6 +12,11 @@
 
         <script src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/sendContact.js"></script>
+        <!-- <script type="text/javascript" src="js/sendContact.js"></script> -->
+        <!-- <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script> -->
+        
 
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -38,7 +43,7 @@
                     });
                     } // End if
                 });
-            });
+            }); 
         </script>
 
     </head>
@@ -195,50 +200,72 @@
                     <!-- BEGIN: Contact Section -->
                     <div class="container" id="section-connect">
                         <div class="row">
-                            <h2 class="center text-brown">
+                            <form class="form-horizontal" id="form-contact" name="contact" action="POST">
+                                <h2 class="center text-brown">
                                     <i class="fa fa-telegram fa-fw" aria-hidden="true"></i>
                                 </h2>
                                 <h4 class="center text-brown">Let's get started</h4>
-                            <form class="form-horizontal">
                                 <div class="col-md-6 contact-col">
                                     <div class="form-group">
                                         <label class="control-label" for="contact_name">Your Name</label>
-                                        <input class="form-control" id="contact_name" type="text" value="">
+                                        <input class="form-control" id="contact_name" name="name" type="text" value="" required>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label" for="contact_email">Email</label>
-                                        <input class="form-control" id="contact_email" type="text" value="">
+                                        <input class="form-control" id="contact_email" name="email" type="email" value="" required>
                                     </div>
                                 </div>
                                     <div class="col-md-6 contact-col">
                                     <div class="form-group">
                                         <label class="control-label" for="contact_company">Company Name</label>
-                                        <input class="form-control" id="contact_company" type="text" value="">
+                                        <input class="form-control" id="contact_company" name="company" type="text" value="" required>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label" for="contact_phone">Phone</label>
-                                        <input class="form-control" id="contact_phone" type="text" value="">
+                                        <input class="form-control" id="contact_phone" name="phone" type="tel" value="" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <label class="control-label" for="contact_email">Message</label>
-                                    <textarea class="form-control" id="contact_email" type="text" rows=3></textarea>
+                                    <label class="control-label" for="contact_message">Message</label>
+                                    <textarea class="form-control" id="contact_message" name="message"type="text" rows=3 required></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <button id="send-button" class="btn btn-default">Send</button>
                                 </div>
                             </form>
+                            <div class="divider"></div>
+                            <div id="contact-success" class="col-md-12 center text-brown hideme">
+                                <h2>
+                                    <i class="fa fa-handshake-o fa-fw" aria-hidden="true"></i>
+                                </h2>
+                                <h4>Thank you for contacting us</h4>
+                                <h6>You are very important to us, all information received will always remain confidential. We will be in touch soon!<h6>
+                            </div>
+                            <div id="contact-fail" class="col-md-12 hideme">
+                                <br>
+                                <div class="alert alert-warning alert-dismissible" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h6><strong>Oh snap!</strong> we are experiencing some technical challanges, please try contacting us in a little while..</h6>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
                         </div>
                     </div>
                     <!-- END: Contact Section -->
                     <div class="divider"></div>
                     <!-- BEGIN: Footer Section -->
-                    <div class="row" id="footer">
+                    <div class="row footer">
                         <div class="container text-center text-white">
                             <h5>Connect</h5>
                             <h3>
-                                <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
-                                <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+                                <a href="https://www.facebook.com/quantumwand/"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/quantumwand"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
                                 <i class="fa fa-google-plus fa-fw" aria-hidden="true"></i>
-                                <i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
-                                <i class="fa fa-github fa-fw" aria-hidden="true"></i>
+                                <a href="https://www.linkedin.com/company/27021312/"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a>
+                                <a href="https://github.com/quantumwand"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a>
                             </h3>
                             <p style="padding-top:10px;"><i class="fa fa-copyright fa-fw" aria-hidden="true"></i> Quantum Wand, 2017</p>
                         </div> 
